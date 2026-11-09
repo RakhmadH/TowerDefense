@@ -1,5 +1,3 @@
-using System;
-using System.Net.Http.Headers;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
