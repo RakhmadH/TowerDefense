@@ -24,7 +24,7 @@ public class Turret : MonoBehaviour
         {
             return;
         }
-
+        //Target lock on
         Vector3 directionToLook = target.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(directionToLook);
         Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation,Time.deltaTime*turnSpeed).eulerAngles;
