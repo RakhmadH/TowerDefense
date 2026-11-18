@@ -16,7 +16,7 @@ public class CameraController : MonoBehaviour
     public float minX = 0f;
     public float maxX = 60f;
 
-    public float minZ = -80f;
+    public float minZ = -90f;
     public float maxZ = -10f;
 
     private Vector3 cameraMovement = new Vector3(0, 0, 0);
@@ -93,7 +93,7 @@ public class CameraController : MonoBehaviour
         finalCamPosition.x = Mathf.Clamp(finalCamPosition.x, minX, maxX);
         finalCamPosition.z = Mathf.Clamp(finalCamPosition.z, minZ, maxZ);
 
-        //Debug.Log(finalCamPosition);
+        Debug.Log(finalCamPosition);
 
 
         //Apply the clamped camera movement position to the camera's transform
