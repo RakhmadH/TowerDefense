@@ -93,7 +93,7 @@ public class CameraController : MonoBehaviour
         finalCamPosition.x = Mathf.Clamp(finalCamPosition.x, minX, maxX);
         finalCamPosition.z = Mathf.Clamp(finalCamPosition.z, minZ, maxZ);
 
-        Debug.Log(finalCamPosition);
+        //Debug.Log(finalCamPosition);
 
 
         //Apply the clamped camera movement position to the camera's transform
